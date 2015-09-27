@@ -6,15 +6,15 @@ output: html_document
 ---
 
 # Approach
-The training and test data sets were both read, and enriched by  
-* binding with the activity for each observation (from Y_train.txt or Y_test.txt)    
-* binding with the subject for each observation (from subject_train.txt or subject_test.txt)  
+The training and test data sets were both read (from X_train.txt and X_test.txt), and enriched by  
+* binding with the activity for each observation (from Y_train.txt and Y_test.txt)    
+* binding with the subject for each observation (from subject_train.txt and subject_test.txt)  
 * supplying the measurements with column names (from features.txt)  
 The two data sets were combined into one.  
    
 The combined data set were reduced to only the columns that contain "mean" or "std".  
    
-The reduced data set were summarised by getting the average of each measurement for 
+This reduced data set were summarised by getting the arithmic mean (average) of each measurement for 
 each activity and subject.   
 
 The summarised data set were enhanced by giving friendly names to the activities (from activity_labels.txt).   
