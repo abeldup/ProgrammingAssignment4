@@ -64,8 +64,11 @@ tBodyGyroJerkMean
 
 # Tidy Data Set 
 
+In the tidy data set we reduced the data to only the mean and standard deviation observations.
+These observations were aggregated into the arithmetic mean (average) for each activity and subject measured.
 The columns in the tidy, summarised data set are:   
 ('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions)   
+(All observations are normalized and bounded within [-1,1])  
 
 activity  
 subject    
@@ -111,4 +114,3 @@ fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()   
 fBodyBodyGyroJerkMag-meanFreq()   
 
-All observations are normalized and bounded within [-1,1].
